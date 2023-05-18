@@ -1,18 +1,18 @@
 version: '3'
+
 services:
-  api1:
-    build: .
-    command: uvicorn main1:app --host 0.0.0.0 --port 8000
+
+  api-gatway:
+    build: api-gateway-svc
     ports:
-      - "8000:8000"
-  api2:
-    build: .
-    command: uvicorn main2:app --host 0.0.0.0 --port 8000
+      - "8080:80"
+  
+  torch-model:
+    build: torch-model-svc
     ports:
-      - "8001:8000"
-  nginx:
-    image: nginx
+      - "8081:8000"
+
+  xgb-model:
+    build: xgb-model-svc
     ports:
-      - "80:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - "8082:8000"
