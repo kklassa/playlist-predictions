@@ -11,11 +11,11 @@
   * **`preprocessing`** - contains the data preprocessing artifacts  
 * **`data`** - contains data used in training and testing (excluded from version control)
 * **`notebooks`** - contains the jupyter notebooks used for data preprocessing, modeling and testing
+  * [`AB_testing.ipynb`](./notebooks/AB_testing.ipynb) - A/B testing the models via created services
   * [`data_analysys.ipynb`](./notebooks/data_analysys.ipynb) - exploratory data analysis (stage I of the project)
   * [`data_preparation.ipynb`](./notebooks/data_preperation.ipynb) - data augmentation and export to CSV
   * [`model_training.ipynb`](./notebooks/model_training.ipynb) - data preprocessing, model training and evaluation
   * [`inference_testing.ipynb`](./notebooks/inference_testing.ipynb) - loading and testing the trained models, exploring programmatic model serving
-* **`scripts`** - contains test and utility scripts
 * **`services`** - contains the code and configuration files for model serving and load balancer services
   * **`load-balancer-svc`** - contains the Nginx load balancer service configuration files
   * **`torch-model-svc`** - contains the PyTorch model serving code and configuration files

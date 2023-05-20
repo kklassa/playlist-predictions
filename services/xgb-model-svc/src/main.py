@@ -7,7 +7,7 @@ import xgboost as xgb
 from pathlib import Path
 
 
-app = FastAPI()
+app = FastAPI(body_limit=2**24)
 
 
 @app.on_event("startup")

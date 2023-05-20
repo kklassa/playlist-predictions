@@ -8,7 +8,7 @@ import numpy as np
 from model import NNPredictor
 
 
-app = FastAPI()
+app = FastAPI(body_limit=2**24)
 
 
 @app.on_event("startup")
