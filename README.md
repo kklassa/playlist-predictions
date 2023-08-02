@@ -1,8 +1,4 @@
-# IUM Project
-
-## Authors
-*Kacper Klassa*  
-*Jakub Kowieski*
+# Playlist Predictions - A Machine Learning Project
 
 ## Repository structure
 
@@ -32,4 +28,7 @@ docker compose up
 
 The API gateway will be available at [`http://localhost:8080/`](http://localhost:8080/). The API documentation is available at [`http://localhost:8080/docs`](http://localhost:8080/docs).  
 
-The Nginx reverse proxy performs round robin load balancing, so the request will get forwarded by the proxy to a randomly selected upstream service. If you want to access a specific service, you can find them at [`http://localhost:8080/torch-model/`](http://localhost:8080/torch-model/) and [`http://localhost:8080/xgb-model/`](http://localhost:8080/xgb-model/) for the Neural Network and XGBoost models respectively. You can also bypass the proxy and access the model serving services directly at [`http://localhost:8081/`](http://localhost:8081/) and [`http://localhost:8082/`](http://localhost:8082/).
+The Nginx reverse proxy performs round robin load balancing, so the request will get forwarded by the proxy to a randomly selected upstream service. If you want to access a specific service, you can find them at [`http://localhost:8080/torch-model/`](http://localhost:8080/torch-model/) and [`http://localhost:8080/xgb-model/`](http://localhost:8080/xgb-model/) for the Neural Network and XGBoost models respectively. You can also bypass the proxy and access the model serving services directly at [`http://localhost:8081/`](http://localhost:8081/) and [`http://localhost:8082/`](http://localhost:8082/).  
+
+
+*This project was created as an assignment in the Machine Learning Engineering course @ Warsaw University of Technology.*
